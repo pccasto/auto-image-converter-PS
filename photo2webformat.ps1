@@ -310,6 +310,15 @@ $handlers = . {
 # provide feedback it is running, but prettier that successive dots :-)
 try
 {
+    Write-Host "photo2webformat now running with the following settings:"
+    Write-Host "  Input Directory:   $input_base"
+    Write-Host "  Output Directory:  $output_base"
+    Write-Host "  Resize value (px): $resize_value"
+    Write-Host "  File Types:        $file_types"
+    Write-Host 
+
+
+
     do # my eye candy while waiting for input
     {  # might make this a function at some point
         @(  "        Running - Press Ctrl-C to Exit`r>>>>>>> ",
